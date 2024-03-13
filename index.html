@@ -3,71 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./home/styles.css" />
-    <title>Waving Kaleidoscopes Gems & Jewelry</title>
+    <title>Hero Image Example</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-image {
+        background-image: url("./home/assets/webbanner1.jpg");
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+      }
+
+      
+
+      .navbar {
+        background-color: blueviolet;
+      
+        margin: auto;
+        position: absolute;
+        text-align: center;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        color: aqua;
+      }
+    </style>
   </head>
+  
+    <div class="hero-image">
+        <h1>Waving Kaleidoscopes Gems & Jewelry</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="jewelry/index.html">Jewelry</a>
+        <a href="rare-gems/index.html">Rare Gem Information</a>
+        <a href="aboutus/index.html">About</a>
+        <a href="contactus/index.html">Contact</a>
+      </div>
   <body>
-    <header>
-      <div class="hero-section">
-        <div class="hero-container">
-          <h1>Waving Kaleidoscopes Gems & Jewelry</h1>
-        </div>
-        <img src="./home/assets/webbanner1.jpg" alt="Colorful Jewels" />
-      </div>
-    </header>
-    <div class="navbar">
-      <a href="#">Home</a>
-      <a href="./jewelry/index.html">Jewelry</a>
-      <a href="./rarestoneeducation/index.html">Rare Stone Information</a>
-      <a href="./aboutus/index.html">About Us</a>
-      <a href="./contactus/index.html">Contact</a>
-    </div>
-    <div class="row">
-      <div class="h2">
-        <h2>Tell a Story of Elegance, Sophistication and Timeless Beauty</h2>
-      </div>
-    </div>
-    <div class="row2">
-      <div>
-        <p>
-          Step into a world of timeless and unparalleled beauty that captures
-          the essence of grace and charm. The jewelry here whether genuine or
-          simulated will bring out the unique sophistication of your style and
-          personality.
-        </p>
-      </div>
-    </div>
-    <div class="carousel">
-      <div class="carousel-slide">
-        <img
-          src="./home/assets/Star copy.jpg"
-          alt="Star Sapphire and Diamond Ring"
-        />
-      </div>
-      <div class="carousel-slide">
-        <img
-          src="./home/assets/StraightOn.jpg"
-          alt="Sapphire and diamond ring"
-        />
-      </div>
-      <div class="carousel-slide">
-        <img src="./home/assets/20240306_133635.jpg" alt="Image 3" />
-      </div>
-      <button class="carousel-prev">&larr;</button>
-      <button class="carousel-next">&rarr;</button>
-    </div>
-    <footer>
-      <p>Author : Rhonda Bonner</p>
-      <a
-        class="email"
-        href="mailto: wavingkaleidoscopesgemsandjewelry@gmail.com"
-        >Email Me</a
-      >
-      <p>
-        <span>COPYRIGHT &copy; 2024 All Rights Reserved.</span> For permissions
-        please email.
-      </p>
-    </footer>
+    
+  
+    
+
     <script src="script.js"></script>
   </body>
 </html>

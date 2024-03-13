@@ -35,10 +35,33 @@ body {
   width: 100%;
   color: white;
   padding: 20px;
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row h2 {
   font-size: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.column1 {
+  flex: 0 0 60%;
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+.column2 {
+  flex: 0 0 40%;
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+.column1 img,
+.column2 img {
+  max-width: 50%;
+  height: auto;
 }

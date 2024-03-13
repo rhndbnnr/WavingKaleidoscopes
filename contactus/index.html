@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../home/styles.css" />
-    <title>Jewelry</title>
+    <title>Contact</title>
   </head>
   <body>
     <header></header>
@@ -15,5 +15,18 @@
       <a href="./aboutus/index.html">About Us</a>
       <a href="./contactus/index.html">Contact Us</a>
     </div>
+    <h2>Please Leave Comments</h2>
+    <form action="/submit-form" method="GET">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br />
+
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>

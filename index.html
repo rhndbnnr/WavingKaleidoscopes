@@ -6,7 +6,7 @@
     <title>Hero Image Example</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
+      rel="stylesheet" href="./home/styles.css"
     />
     <style>
       .hero-image {
@@ -20,26 +20,26 @@
         text-align: center;
         position: relative;
       }
-
-      
-
       .navbar {
-        background-color: blueviolet;
-      
-        margin: auto;
-        position: absolute;
-        text-align: center;
-      }
+  background-color: blueviolet;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-      }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
 
-      .navbar a:hover {
-        color: aqua;
-      }
-    </style>
+.navbar a:hover {
+  color: aqua;
+}
+</style>
   </head>
   
     <div class="hero-image">
@@ -48,18 +48,14 @@
     </div>
     <div class="container">
       <div class="navbar">
-        <a href="#">Home</a>
-        <a href="jewelry/index.html">Jewelry</a>
-        <a href="rare-gems/index.html">Rare Gem Information</a>
-        <a href="aboutus/index.html">About</a>
-        <a href="contactus/index.html">Contact</a>
+        <a href="#" aria-label="Home">Home</a>
+        <a href="jewelry/index.html" aria-label="Jewelry">Jewelry</a>
+        <a href="rare-gems/index.html" aria-label="Rare Gem Information">Rare Gem Information</a>
+        <a href="aboutus/index.html" aria-label="About">About</a>
+        <a href="contactus/index.html"aria-label="Contact">Contact</a>
       </div>
-      
-  <body>
-    
+      <body>
   
-    
-
     <script src="script.js"></script>
   </body>
 </html>

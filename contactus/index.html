@@ -3,30 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../home/styles.css" />
-    <title>Contact</title>
+    <title>Hero Image Example</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" href="./home/styles.css"
+    />
+    <style>
+      .hero-image {
+        background-image: url("./home/assets/webbanner1.jpg");
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+      }
+      .navbar {
+  background-color: blueviolet;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  color: aqua;
+}
+</style>
   </head>
-  <body>
-    <header></header>
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="#">Jewelry</a>
-      <a href="./rarestoneeducation/index.html">Rare Stone Information</a>
-      <a href="./aboutus/index.html">About Us</a>
-      <a href="./contactus/index.html">Contact Us</a>
-    </div>
-    <h2>Please Leave Comments</h2>
-    <form action="/submit-form" method="GET">
+    <div class="container">
+      <div class="navbar">
+        <a href="home.index.html" aria-label="Home">Home</a>
+        <a href="jewelry/index.html" aria-label="Jewelry">Jewelry</a>
+        <a href="rare-gems/index.html" aria-label="Rare Gem Information">Rare Gem Information</a>
+        <a href="aboutus/index.html" aria-label="About">About</a>
+        <a href="#"aria-label="Contact">Contact</a>
+      </div>
+    <h2>Please Leave Comments or Questions</h2>
+    <form id="commentForm">
       <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br />
+      <input type="text" id="name" name="name" required /><br />
 
       <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
+      <input type="email" id="email" name="email" required /><br />
 
       <label for="message">Message:</label><br />
       <textarea id="message" name="message" rows="4" cols="50"></textarea><br />
 
-      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>

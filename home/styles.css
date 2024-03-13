@@ -29,3 +29,16 @@ body {
 .container {
   padding: 0;
 }
+
+.row {
+  background-color: blue;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.row h2 {
+  font-size: 40px;
+}
